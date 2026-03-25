@@ -1,0 +1,53 @@
+{
+  "name": "quality-validation-team",
+  "description": "실습 자료와 원본 학습 자료를 교차 검증하여 정확성, 커버리지, 일관성을 보증하는 품질 검증팀",
+  "createdAt": 1774656000000,
+  "leadAgentId": "team-lead@quality-validation-team",
+  "leadSessionId": "qv-lead-001",
+  "members": [
+    {
+      "agentId": "team-lead@quality-validation-team",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": [
+        "curriculum-validator@quality-validation-team",
+        "code-reviewer@quality-validation-team",
+        "quality-auditor@quality-validation-team"
+      ]
+    },
+    {
+      "agentId": "curriculum-validator@quality-validation-team",
+      "name": "curriculum-validator",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@quality-validation-team"]
+    },
+    {
+      "agentId": "code-reviewer@quality-validation-team",
+      "name": "code-reviewer",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@quality-validation-team"]
+    },
+    {
+      "agentId": "quality-auditor@quality-validation-team",
+      "name": "quality-auditor",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@quality-validation-team"]
+    }
+  ]
+}

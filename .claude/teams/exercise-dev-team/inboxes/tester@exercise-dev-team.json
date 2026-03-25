@@ -1,0 +1,19 @@
+[
+  {
+    "from": "team-lead@exercise-dev-team",
+    "to": "tester@exercise-dev-team",
+    "type": "task-assignment",
+    "payload": {
+      "taskId": "QA-001",
+      "title": "기존 노트북 검증 + 솔루션 노트북 실행 테스트",
+      "description": "exercise-developer가 작업 완료 후, 1) 기존 생성된 Module 01-08 노트북의 JSON 구조 유효성 확인, 2) 솔루션 노트북이 에러 없이 실행되는지 nbconvert --execute로 검증, 3) 검증 셀(assert)이 솔루션에서 통과하는지 확인, 4) TODO 셀에 힌트가 3단계로 포함되어 있는지 확인",
+      "acceptanceCriteria": [
+        "모든 .ipynb 파일이 유효한 JSON",
+        "솔루션 노트북 nbconvert --execute 통과",
+        "검증 셀 assert가 솔루션에서 통과",
+        "TODO 셀에 힌트 3단계 포함"
+      ],
+      "dependencies": ["ED-BATCH-1", "ED-BATCH-2"]
+    }
+  }
+]

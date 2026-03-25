@@ -1,0 +1,41 @@
+{
+  "from": "exercise-developer@exercise-dev-team",
+  "to": "team-lead@exercise-dev-team",
+  "type": "task-result",
+  "payload": {
+    "taskId": "ED-BATCH-1",
+    "status": "completed",
+    "summary": "Module 04 실습 노트북 2개, Module 07 실습 노트북 2개, Module 01-08 솔루션 노트북 15개를 생성했습니다. 총 19개 파일을 새로 생성했으며, Module 01, 02, 08의 솔루션은 이미 존재하여 생성을 건너뛰었습니다. 모든 파일은 FakeLLM 기반 오프라인 실행, TODO+힌트 형식 실습 셀, assert 기반 검증 셀 형식을 따릅니다.",
+    "artifacts": [
+      "practice/module_04_first_agent/01_document_summarizer.ipynb",
+      "practice/module_04_first_agent/02_email_classifier.ipynb",
+      "practice/module_04_first_agent/solutions/01_document_summarizer_solution.ipynb",
+      "practice/module_04_first_agent/solutions/02_email_classifier_solution.ipynb",
+      "practice/module_05_prompt_engineering/solutions/01_prompt_structure_solution.ipynb",
+      "practice/module_05_prompt_engineering/solutions/02_few_shot_solution.ipynb",
+      "practice/module_05_prompt_engineering/solutions/03_yaml_prompts_solution.ipynb",
+      "practice/module_06_structured_output/solutions/01_pydantic_models_solution.ipynb",
+      "practice/module_06_structured_output/solutions/02_structured_output_solution.ipynb",
+      "practice/module_06_structured_output/solutions/03_json_parser_solution.ipynb",
+      "practice/module_07_llm_optimization/02_model_router.ipynb",
+      "practice/module_07_llm_optimization/03_caching.ipynb",
+      "practice/module_07_llm_optimization/solutions/01_cost_calculator_solution.ipynb",
+      "practice/module_07_llm_optimization/solutions/02_model_router_solution.ipynb",
+      "practice/module_07_llm_optimization/solutions/03_caching_solution.ipynb",
+      "practice/module_03_dev_environment/solutions/01_fake_llm_solution.ipynb",
+      "practice/module_03_dev_environment/solutions/02_three_node_graph_solution.ipynb"
+    ],
+    "skipped": [
+      "practice/module_01_agent_overview/solutions/ (이미 존재)",
+      "practice/module_02_langgraph_fundamentals/solutions/ (이미 존재)",
+      "practice/module_08_error_handling/solutions/ (이미 존재)"
+    ],
+    "keyPatterns": {
+      "module04": "functools.partial로 LLM 의존성 주입, add_conditional_edges로 스팸 이메일의 urgency 단계 건너뛰기",
+      "module05": "ChatPromptTemplate.from_messages()로 Zero-shot/Few-shot 구성, YAML에서 system+few_shots+human 키 로드",
+      "module06": "Field 제약조건(ge, le, min_length, pattern), field_validator로 round/filter, StructuredOutputSimulator로 FakeLLM JSON→Pydantic 변환, 3단계 JSON 폴백 파서",
+      "module07": "ModelTier(str, Enum), RoutingRule dataclass, ModelRouter.get_model()의 동적 업그레이드, compute_cache_key() SHA-256, LLMCache TTL 기반 히트율 측정"
+    },
+    "issues": []
+  }
+}

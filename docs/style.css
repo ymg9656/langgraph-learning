@@ -1,0 +1,164 @@
+/* AI Agent Training PDF Stylesheet */
+@page {
+  size: A4;
+  margin: 2.5cm 2cm;
+  @top-center {
+    content: "AI Agent 개발 입문: LangGraph로 시작하는 에이전트 개발";
+    font-size: 8pt;
+    color: #888;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-size: 9pt;
+    color: #666;
+  }
+}
+
+@page :first {
+  @top-center { content: none; }
+  @bottom-center { content: none; }
+}
+
+body {
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.7;
+  color: #1a1a1a;
+  word-break: keep-all;
+}
+
+/* Headings */
+h1 {
+  font-size: 22pt;
+  font-weight: 700;
+  color: #1a365d;
+  border-bottom: 3px solid #2b6cb0;
+  padding-bottom: 8px;
+  margin-top: 40px;
+  page-break-before: always;
+}
+
+h1:first-of-type {
+  page-break-before: avoid;
+}
+
+h2 {
+  font-size: 16pt;
+  font-weight: 600;
+  color: #2c5282;
+  border-bottom: 1px solid #bee3f8;
+  padding-bottom: 4px;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 13pt;
+  font-weight: 600;
+  color: #2d3748;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 11pt;
+  font-weight: 600;
+  color: #4a5568;
+  margin-top: 16px;
+}
+
+/* Code blocks */
+pre {
+  background-color: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 12px 16px;
+  font-size: 8.5pt;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  page-break-inside: avoid;
+}
+
+code {
+  font-family: "SF Mono", "Menlo", "Monaco", "Consolas", monospace;
+  font-size: 9pt;
+}
+
+p code, li code, td code {
+  background-color: #edf2f7;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 9pt;
+  color: #c53030;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+  font-size: 9.5pt;
+  page-break-inside: avoid;
+}
+
+th {
+  background-color: #2b6cb0;
+  color: white;
+  font-weight: 600;
+  padding: 8px 12px;
+  text-align: left;
+  border: 1px solid #2c5282;
+}
+
+td {
+  padding: 6px 12px;
+  border: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #4299e1;
+  background-color: #ebf8ff;
+  padding: 10px 16px;
+  margin: 16px 0;
+  border-radius: 0 6px 6px 0;
+  font-size: 10pt;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 4px;
+}
+
+/* Links */
+a {
+  color: #2b6cb0;
+  text-decoration: none;
+}
+
+/* Horizontal rules - section dividers */
+hr {
+  border: none;
+  border-top: 2px solid #e2e8f0;
+  margin: 30px 0;
+}
+
+/* Strong/Bold */
+strong {
+  color: #1a202c;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
+  margin: 16px auto;
+}

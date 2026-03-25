@@ -1,0 +1,70 @@
+{
+  "name": "exercise-dev-team",
+  "description": "분석 결과를 기반으로 Jupyter 노트북 실습 자료를 설계하고 구현하는 실습 개발팀",
+  "createdAt": 1774656000000,
+  "leadAgentId": "team-lead@exercise-dev-team",
+  "leadSessionId": "ed-lead-001",
+  "members": [
+    {
+      "agentId": "team-lead@exercise-dev-team",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": [
+        "exercise-designer@exercise-dev-team",
+        "exercise-developer@exercise-dev-team",
+        "tech-writer@exercise-dev-team",
+        "tester@exercise-dev-team"
+      ]
+    },
+    {
+      "agentId": "exercise-designer@exercise-dev-team",
+      "name": "exercise-designer",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@exercise-dev-team"]
+    },
+    {
+      "agentId": "exercise-developer@exercise-dev-team",
+      "name": "exercise-developer",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": [
+        "team-lead@exercise-dev-team",
+        "exercise-designer@exercise-dev-team"
+      ]
+    },
+    {
+      "agentId": "tech-writer@exercise-dev-team",
+      "name": "tech-writer",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@exercise-dev-team"]
+    },
+    {
+      "agentId": "tester@exercise-dev-team",
+      "name": "tester",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": [
+        "team-lead@exercise-dev-team",
+        "exercise-developer@exercise-dev-team"
+      ]
+    }
+  ]
+}

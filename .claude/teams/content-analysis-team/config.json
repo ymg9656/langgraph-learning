@@ -1,0 +1,53 @@
+{
+  "name": "content-analysis-team",
+  "description": "12개 학습 모듈 .md 파일을 분석하여 코드 블록, 학습 목표, 실습 후보를 추출하는 콘텐츠 분석팀",
+  "createdAt": 1774656000000,
+  "leadAgentId": "team-lead@content-analysis-team",
+  "leadSessionId": "ca-lead-001",
+  "members": [
+    {
+      "agentId": "team-lead@content-analysis-team",
+      "name": "team-lead",
+      "agentType": "team-lead",
+      "model": "claude-opus-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": [
+        "analyst-foundations@content-analysis-team",
+        "analyst-intermediate@content-analysis-team",
+        "analyst-advanced@content-analysis-team"
+      ]
+    },
+    {
+      "agentId": "analyst-foundations@content-analysis-team",
+      "name": "analyst-foundations",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@content-analysis-team"]
+    },
+    {
+      "agentId": "analyst-intermediate@content-analysis-team",
+      "name": "analyst-intermediate",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@content-analysis-team"]
+    },
+    {
+      "agentId": "analyst-advanced@content-analysis-team",
+      "name": "analyst-advanced",
+      "agentType": "team-member",
+      "model": "claude-sonnet-4-6",
+      "joinedAt": 1774656000000,
+      "tmuxPaneId": "",
+      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "subscriptions": ["team-lead@content-analysis-team"]
+    }
+  ]
+}
