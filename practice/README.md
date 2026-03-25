@@ -5,18 +5,17 @@
 ## 빠른 시작
 
 ```bash
-# 1. 가상환경 생성 및 활성화
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+# 1. uv 설치 (아직 없다면)
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# 2. 의존성 설치
-pip install -r requirements.txt
+# 2. 의존성 설치 (가상환경 자동 생성 + uv.lock 기반 버전 고정)
+uv sync
 
 # 3. 환경 검증
-python verify_setup.py
+uv run python verify_setup.py
 
 # 4. Jupyter 실행
-jupyter notebook
+uv run jupyter notebook
 ```
 
 ### API 키 설정 (Module 04부터 필요)
@@ -83,7 +82,8 @@ Module 01~03은 FakeLLM을 사용하므로 API 키 없이 실습 가능합니다
 ```
 practice/
 ├── README.md              # 이 파일
-├── requirements.txt       # 의존성
+├── pyproject.toml        # 의존성 정의
+├── uv.lock               # 의존성 버전 고정 (모든 환경 동일)
 ├── .env.example          # API 키 템플릿
 ├── verify_setup.py       # 환경 검증
 ├── common/               # 공유 유틸리티
