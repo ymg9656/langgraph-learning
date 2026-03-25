@@ -18,5 +18,8 @@ venv/
 .vscode/
 .idea/
 
+# Team inboxes (런타임 통신 파일)
+.claude/teams/*/inboxes/
+
 # Audio files (too large for git)
 docs/audio/

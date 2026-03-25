@@ -12,7 +12,7 @@
       "model": "claude-opus-4-6",
       "joinedAt": 1774656000000,
       "tmuxPaneId": "",
-      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
+      "cwd": ".",
       "subscriptions": [
         "curriculum-validator@quality-validation-team",
         "code-reviewer@quality-validation-team",
@@ -26,8 +26,10 @@
       "model": "claude-sonnet-4-6",
       "joinedAt": 1774656000000,
       "tmuxPaneId": "",
-      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
-      "subscriptions": ["team-lead@quality-validation-team"]
+      "cwd": ".",
+      "subscriptions": [
+        "team-lead@quality-validation-team"
+      ]
     },
     {
       "agentId": "code-reviewer@quality-validation-team",
@@ -36,8 +38,10 @@
       "model": "claude-sonnet-4-6",
       "joinedAt": 1774656000000,
       "tmuxPaneId": "",
-      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
-      "subscriptions": ["team-lead@quality-validation-team"]
+      "cwd": ".",
+      "subscriptions": [
+        "team-lead@quality-validation-team"
+      ]
     },
     {
       "agentId": "quality-auditor@quality-validation-team",
@@ -46,8 +50,10 @@
       "model": "claude-sonnet-4-6",
       "joinedAt": 1774656000000,
       "tmuxPaneId": "",
-      "cwd": "/Users/lee9656/workspace-github/langgraph-learning",
-      "subscriptions": ["team-lead@quality-validation-team"]
+      "cwd": ".",
+      "subscriptions": [
+        "team-lead@quality-validation-team"
+      ]
     }
   ]
 }
